@@ -40,7 +40,7 @@ ul {
   list-style: none; /* Remove default bullets */
 }
 
-h1, span, li, p {
+h1, h2, span, li, p {
   mix-blend-mode: exclusion;
 }
 /* buttons will be rounded rectangles with white outlines */
