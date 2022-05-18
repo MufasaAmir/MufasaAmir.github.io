@@ -1,0 +1,154 @@
+html {
+  --color-emphasis: #E062AA;
+  scroll-behavior: smooth;
+}
+
+/* 
+  The main stylings used throughout the page
+  Different stylings will be changed in their respective categories
+*/
+body {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 2rem;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  color: white;
+  background-color: #1B1A1F;
+}
+
+a {
+  font-style: none;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-weight: bold;  
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+h1, span, li, p {
+  mix-blend-mode: exclusion;
+}
+/* buttons will be rounded rectangles with white outlines */
+button {
+  font-weight: bold;
+  background-color: none;
+  background: none;
+  border-color: white;
+  border-style: solid;
+  border-width: 3px;
+  color: white;
+  border-radius: 40px;
+  padding: 20px;
+  font-size: 1.25rem;
+  mix-blend-mode: difference;
+  transition: 200ms;
+}
+
+/* when selected, buttons will be pink rounded rectangles without outlines */
+button:hover {
+  background-color: var(--color-emphasis);
+  border-color: var(--color-emphasis);
+  color: black;
+  mix-blend-mode: none;
+  box-shadow: 0 0 10px var(--color-emphasis);
+}
+
+/* bullet points will be pink */
+ul li::before {
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: var(--color-emphasis); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+
+.MenuItem {
+  margin: 0 40px;
+}
+
+/* 
+  Similar to how layers work in photoshop
+  Layers allows elements within them to overlap the elements in layers behind them
+*/
+.Layer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Row {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  /* background: red; */
+}
+
+.WideRow {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.Background {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.TextBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 400px;
+}
+
+.Dark {
+  color: black;
+}
+
+.CarouselObj {
+  width: 20rem;
+  transition: 200ms;
+  margin: 20px;
+}
+.CarouselObj:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4px white;
+}
+
+.CaptionWrapper {
+  flex-basis: 30%;
+}
+
+.CaptionImgWrapper {
+  flex-basis: 40%;
+  display: flex;
+}
+
+.CaptionImg {
+  width: 100%; 
+}
+
+.Footer {
+  justify-self: flex-end;
+}
+
