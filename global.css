@@ -25,7 +25,15 @@ a {
 }
 
 h1 {
-  font-weight: bold;  
+  font-weight: 600;  
+}
+
+h2 {
+  font-weight: 500;  
+}
+
+span {
+  font-weight: 300; 
 }
 
 ul {
